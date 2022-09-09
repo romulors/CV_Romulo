@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap - CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<!-- Bootstrap - JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+    <title>Romulo Rocha - CV Online</title>
+</head>
+<body>
+
+    <!-- Criaremos um menu de navegação tabulado, para mostrar o conteúdo da página. -->
+    <!-- Classes nav e nav-tabs: são utilizadas para definir esta lista não ordenada como um menu. -->
+    <!-- Classes justify-content-center: centraliza o menu na página -->
+    <!-- Atributo role="tablist": Cria uma listagem de tabs a partir dos itens da lista -->
+    <!-- Elemento ul: Cria uma lista não ordenada -->
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+
+        <!-- Classe nav-link: Monta o item como um link da barra de navegação aninhada -->
+        <!-- Classe link-dark: utiliza a cor preta ao inves da cor azul dos hyperlinks -->
+        <!-- Classe active: mantem uma das tabs ativada, fazendo-a carregar instantaneamente -->
+        <!-- Atributo data-bs-toggle="tab": Indica ao Bootstrap que haverá uma troca (toggle) dos dados, usando tabs -->
+        <!-- Atributo href="#nome": Faz um link interno na página, buscando o identificador indicado pelo nome -->
+        <!-- Elemento a: Cria uma âncora/link para determinado endereço no href.-->
+        <a class="nav-link link-dark active" data-bs-toggle="tab" href="#romulo">ROMULO</a>
+        <a class="nav-link link-dark" data-bs-toggle="tab" href="#formacao">FORMAÇÃO</a>
+        <a class="nav-link link-dark" data-bs-toggle="tab" href="#portifolio">PORTIFÓLIO</a>
+        <a class="nav-link link-dark" data-bs-toggle="tab" href="#contato">CONTATO</a>
+        <a class="nav-link link-dark" data-bs-toggle="tab" href="#sobre">SOBRE</a>
+    </ul>
+
+            <!-- Conteúdo das abas -->
+            <!-- Elemento div: Cria uma divisória que guarda os elementos html -->
+            <!-- Classe tab-content: Indica que haverá conteudo a ser indicado pelo menu de navegação -->
+            <div class="tab-content">
+
+                <!-- ABA ROMULO -->
+                <!-- Nesta aba utilizarei mais elementos de texto para passar as informações pessoais -->
+
+                <!-- Atributo id: Indica um nome único ao elemento html -->
+                <!-- Classe container: Indica ao Bootstrap que o elemento guardará outros elementos, definindo uma area da tela para eles de acordo com as regras do sistema de GRID do Bootstrap -->
+                <!-- Classe w-75: indica que a largura (width) do container será de 75% do máximo disponível. -->
+                <!-- Classe tab-pane: indica que este elemento é uma das abas de algum menu de navegação -->
+                <!-- Classes fade e show: Indicam a animação associada ao sair e mostrar a tab -->
+                <!-- Classe active: Indica que esta é a aba ativa no menu de navegação  -->
+                <div id="romulo" class="container w-75 tab-pane fade show active">           
+                    <!-- Classe row: Indica que esta é uma linha do sistema GRID do Bootstrap -->
+                    <div class="row">
+                        <!-- Classe col-xs-12: Indica que este elemento ocupara 12 de 12 colunas em uma tela extra pequena -->
+                        <!-- Classe col-sm-6: Indica que este elemento ocupara 6 de 12 colunas em uma tela pequena -->
+                        <!-- Classe col-xl-5: Indica que este elemento ocupara 5 de 12 colunas em uma tela extra grande -->
+                        <!-- Notar que a tela se ajustara de acordo com esses breakpoints -->
+                        <!-- Classe pt-4: Ajusta o padding do topo do elemento para tamanho 4 (grande) -->
+                        <div class="col-xs-12 col-sm-6 col-xl-5 pt-4">
+                            <!-- Classes card, card-img-top, card-body: Define uma combina de elementos html que compõem um Card. -->
+                            <!-- Neste card, faremos a apresentação da foto com algumas informações -->
+                            <div class="card">
+                                <!-- Atributo src: Indica o caminho da fonte (source) de um recurso -->
+                                <!-- Atributo alt: Indica o conteúdo do elemento, de modo alternativo -->
+                                <img class="card-img-top" src="/Romulo.jpg" alt="Imagem de Romulo">
+                                <div class="card-body">
+                                    <p>Ocupação Principal<br><strong>Físico Médico</strong></p>                               
+                                    <p>Data de Nascimento<br><strong>07/09/1987</strong></p>
+                                    <p>Localidade<br><strong>São Leopoldo, Brasil</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aqui será utilizado uma série de elementos HTML (cabecários h2, parágrafos, âncoras) para fazer -->
+                        <!-- a descrição dos dados presentes na aba 'Romulo'-->
+                        <!-- Classe text-decoration-none: remove o sublinhado do hyperlink de um elemento âncora. -->
+                        <div class="col pt-4">
+                            <h2>Romulo Rocha Santos</h2>
+                            <p>Nascido em Porto Alegre, iniciou sua vida profissional realizando manutenção em computadores, após realizar <a class="text-decoration-none" href="https://www.pe.senai.br/cursos/montagem-e-manutencao-de-computadores/">curso de formação</a>. Atuou em uma Videolocadora realizando atendimento a clientes e gestão de estoques.</p>
+                            <p>Cursou <a class="text-decoration-none" href="https://www.pucrs.br/politecnica/curso/bacharelado-fisica-medica/">Bacharelado em Física</a>, onde desenvolveu interesse nos métodos computacionais aplicados a modelagens de sistemas físicos. Orientou sua formação para a Física Médica aplicada à Raditerapia, onde formou-se como <a class="text-decoration-none" href="https://educon.pucrs.br/cursos/fisica-medica-da-radioterapia/">Especialista em Radioterapia</a> após realizar curso de Residência Multiprofissional.</p>
+                            <p>Prossegiu seus estudos, especializando-se em gestão de processos, enquanto cursa Engenharia de Software na <a class="text-decoration-none" href="https://www.uninter.com/">UNINTER</a>.</p>
+
+                            <br>
+                            <h3>Quem sou</h3>
+                            <p>Pai de um filho, busca novas ideias e habilidades constantemente. Não me contenta com o básico, e acredito que o conhecimento sempre pode ser aplicado em áreas aparentemente descorrelatas.</p>
+
+                            <!-- Elemento br: Pula para uma nova linha. -->
+                            <br>
+                            <h3>Hobbies</h3>
+                            <!-- Classes list-group e list-group-item: definem os aspectos visuais de uma listagem -->
+                            <!-- Classe list-group-flush: Utilizada para remover as marcações ao redor a listagem -->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Programar</li>
+                                <li class="list-group-item">Investir</li>
+                                <li class="list-group-item">Passear com a Família</li>
+                                <li class="list-group-item">Assistir Filmes Scify</li>
+                            </ul>    
+                        </div>
+                    </div>               
+                </div>
+
+
+
+                <!-- ABA FORMACAO -->
+                <!-- Nesta aba citaremos as formações, usando pequenos thumbnails para contextualizar. -->
+
+                <!-- Aqui temos um container central -->
+                <div id="formacao" class="container tab-pane fade ">                         
+                    <h2 class="my-4">Formação Acadêmica</h2>
+                    
+                    <!-- Definiremos dois containers, um para cada linha (row), onde ambos dividirão as colunas em espaços iguas -->
+                    <!-- Aqui esta o primeiro container de linha -->
+                    <div class="row text-center">
+                        <!-- Container para a primeira coluna -->
+                        <div class="container col-lg-6">
+                            <!-- Aqui é criada uma nova linha dentro do container, que será separado novamente em duas partes -->
+                            <!-- Uma das partes terá uma imagem, e a outra um texto descritivo -->
+                            <div class="row">
+                                <div class="col col-sm-6">
+                                    <!-- Elemento img: responsavel por carregar a imagem -->
+                                    <!-- Class img-thumbnail: Estiliza a foto como uma thumbnail -->
+                                    <!-- Atributos width e height: definem a largura e altura da imagem -->
+                                    <img class="img-thumbnail" width="304" height="236" src="/engsoft.jpg" alt="Card image">
+                                </div>
+                                <!-- Classe text-start: justifica o texto à esquerda -->
+                                <div class="col text-start">
+                                    <p>Curso:<br><strong>Engenharia de Software</strong></p>                               
+                                    <p>Período:<br><strong>2021-2025 (Previsão)</strong></p>
+                                    <p>Local:<br><strong>UNINTER</strong></p>                            
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <!-- Container para a segunda coluna-->
+                        <div class="container col-lg-6">
+                            <div class="row">
+                                <div class="col col-sm-6">
+                                    <img class="img-thumbnail" width="304" height="236" src="/fisica.jpg" alt="Card image">
+                                </div>
+                                <div class="col text-start">
+                                    <p>Curso:<br><strong>Bacharelado em Física</strong></p>                               
+                                    <p>Período:<br><strong>2011-2013</strong></p>
+                                    <p>Local:<br><strong>UNINTER</strong></p>                               
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- Aqui encontra-se o segundo container de linha -->
+                    <div class="row text-center">
+                        <div class="container col-lg-6">
+                            <div class="row row-cols-2">
+                                <div class="col col-sm-6">
+                                    <img class="img-thumbnail" width="304" height="236" src="/gestao.jpg" alt="Card image">
+                                </div>
+                                <div class="col text-start">
+                                    <p>Curso:<br><strong>MBA Gestão de Processos e Qualidade</strong></p>                               
+                                    <p>Período:<br><strong>2021-2022</strong></p>
+                                    <p>Local:<br><strong>UNINTER</strong></p>                            
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+
+                        <div class="container col-lg-6">
+                            <div class="row text-center">
+                                <div class="col col-sm-6">
+                                    <img class="img-thumbnail" width="304" height="236" src="/residencia.jpg" alt="Card image" width="100%">
+                                </div>
+                                <div class="col text-start">
+                                    <p>Curso:<br><strong>Especialização em Radioterapia</strong></p>                               
+                                    <p>Período:<br><strong>2013-2015</strong></p>
+                                    <p>Local:<br><strong>PUCRS</strong></p>                           
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- ABA PORTIFOLIO -->
+                <!-- Nesta aba, realizaremos uma listagem dos principais (e pequenos) projetos presentes no Github -->
+                <!-- Também informaremos um link para o Github do autor -->
+                <div id="portifolio" class="container tab-pane fade">     
+                    <!-- Classe my-4: Insere margens na direção y de tamanho 4 (grande) -->
+                    <h2 class="text-center my-4">Portifólio no <a class="text-decoration-none" href="https://github.com/romulors">Github</a></h2>
+
+                    <!-- Criamos um container mais 'apertado' para armazenar o conteudo -->
+                    <div class="container w-50">
+
+                        <!-- Adotamos a mesma estratégia de lista usada na aba Formacao/Hobby, para o aspecto visual -->
+                        <ul class="list-group list-group-flush mt-4">
+                            <li class="h4 list-group-item"><a class="text-decoration-none" href="https://github.com/romulors/dio-url-shortener">URL Shortner</a></li>
+                            <li class="list-group-item">Cria novo URL pequeno, baseado em um URL fornecido pelo usuário. Microserviço com mensagens em Json. Criado como projeto para o Bootcamp da Dio-Eduzz.</li>
+                            <li class="list-group-item small">Principal linguagem: TypeScript</li>
+                        </ul> 
+
+                        <ul class="list-group list-group-flush mt-4">
+                            <li class="h4 list-group-item"><a class="text-decoration-none" href="https://github.com/romulors/dio-consuming-github-api">Consumindo API Github com React</a></li>
+                            <li class="list-group-item">Busca dados de algum usuário do Github através de seu nome de usuário.</li>
+                            <li class="list-group-item small">Principais linguagens: JavaScript e HTML</li>
+                        </ul> 
+
+                        <ul class="list-group list-group-flush mt-4">
+                            <li class="h4 list-group-item"><a class="text-decoration-none" href="https://github.com/romulors/dio-clone-genius">Clone Genius</a></li>
+                            <li class="list-group-item">Um simples jogo de memória ao estilo do Genius, onde o jogador necessita clicar a sequência de cores que pisca na tela. A cada nível, uma nova piscada é adicionada às piscadas já existentes, tornando o jogo mais desafiador.</li>
+                            <li class="list-group-item small">Principais linguagens: JavaScript, CSS e HTML</li>
+                        </ul> 
+
+                        <ul class="list-group list-group-flush mt-4">
+                            <li class="h4 list-group-item"><a class="text-decoration-none" href="https://github.com/romulors/jogo-da-forca">Jogo da Forca</a></li>
+                            <li class="list-group-item">Um simpes jogo da forca, criado para praticar HTML, CSS, JavaScript e Git/Github. O código em si foi comentado, contendo a explicação de cada sessão relevante. Segue descrito neste arquivo os comandos Git utilizados para salvar o projeto no GitHub.</li>
+                            <li class="list-group-item small">Principal linguagem: HTML e CSS</li>
+                        </ul> 
+
+                        <ul class="list-group list-group-flush mt-4">
+                            <li class="h4 list-group-item"><a class="text-decoration-none" href="https://github.com/romulors/dio-desafio-github">Desafio DIO - Git/Github</a></li>
+                            <li class="list-group-item">Repositório criado para o Desafio de Projeto..</li>
+                            <li class="list-group-item small">Principal linguagem: Markdown</li>
+                        </ul> 
+                    </div>
+                </div>
+
+
+                <!-- ABA CONTATO -->
+                <!-- Define uma form que enviara uma mensagem post HTML com os dados inseridos -->
+                <div id="contato" class="container tab-pane fade">                   
+
+                    <h2 class="text-center my-4">Entre em contato através do formulário abaixo</h2>
+
+                    <!-- Elemento form: define o formulario html -->
+                    <!-- Atributo action: utilizado para referenciar o destino da mensagem post -->
+                    <!-- Neste caso, retorna para a aba romulo, com as informacoes na barra de endereco do navegador -->
+                    <form action="#romulo">
+                        <!-- Usarmeos um container com largura de 75% -->
+                        <div class="container w-75">
+                            <!-- Criaremos a primeira linha do formulario -->
+                            <div class="row mb-3">
+                                <!-- E dividiremos em duas colunas, para colocar os campos para nome e sobrenome-->
+                                <div class="col">
+                                    <!-- Elemento label: Indica um texto simples explicativo de algum elemento html -->
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <!-- Elemento input: Indica que o elemento recebera informações para o formulario -->
+                                    <!-- Atributo placeholder: Trata-se de um texto temporário até a entrada dos dados -->
+                                    <!-- Atributo name: Salva a informação inserida a variavel chamada "nome" -->
+                                    <input type="text" class="form-control" placeholder="Insira o nome" name="nome">
+                                </div>
+
+                                <!-- Repete para os outros campos...-->
+                                <div class="col">
+                                    <label for="sobrenome" class="form-label">Sobrenome:</label>
+                                    <input type="text" class="form-control" placeholder="Insira o sobrenome" name="sobrenome">
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Insira o email" name="email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea class="form-control" rows="5" id="mensagem" placeholder="Insira alguma mensagem" name="mensagem"></textarea>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="radio">Você seria um:</label>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio1" name="radio" value="professor">Professor
+                                        <label class="form-check-label" for="radio1"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio2" name="radio" value="aluno">Aluno
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio3" name="radio" value="empregador">Empregador
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-check">
+                                        <label for="checkbox">Assuntos de interesse:</label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox1" value="programacao">
+                                        <label class="form-check-label">Programação</label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox2" value="gestao">
+                                        <label class="form-check-label">Gestão</label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" id="checkbox" name="checkbox3" value="fisica">
+                                        <label class="form-check-label">Física</label>
+                                      </div>
+                                </div>
+
+                                <div class="col mt-3">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <img src="..." class="rounded me-2" alt="...">
+                                <strong class="me-auto">Mensagem Enviada!</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Por gentileza aguarde o retorno.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ABA SOBRE -->
+                <!-- Aqui segue uma descricão simples sobre o trabalho (e a pagina) com elementos já utilizados anteriormente -->
+
+                <div id="sobre" class="container w-50 tab-pane fade">                   
+                    <h1 class="text-center mt-5">UNINTER</h3>
+                        <h1 class="text-center">Bacharelado em Engenharia de Software</h6>
+                        <h1 class="text-center">Aplicações Web e Móveis</h6>
+                        <h1 class="text-center">Atividade Prática</h1>
+                
+                        <br><br>
+                        <h2>1. OBJETIVO</h2>
+                        <p>Aplicar os conceitos estudados na disciplina de Aplicações Web e Móveis</p>
+                
+                        
+                        <br>
+                        <h2>2. PROGRAMAS NECESSÁRIOS</h2>
+                        <p>Para desenvolver esta atividade será necessário></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Javascript</li>
+                            <li>Acesso a um provedor de hospedagem gratuito</li>
+                            <li>Um diagramador (IDE VS Code, por exemplo</li>
+                        </ul>
+                
+                
+                        <br>
+                        <h2>3. ORIENTAÇÕES GERAIS</h2>
+                        <p>Desenvolver um site totalmente funcional, com no mínimo quatro links, conforme orientações, e publicá-lo num servidor de hospedagem gratuito.</p>
+                        <p>O tema do site: Portifólio pessoal (CV Online)</pv>
+                
+                
+                        <br>
+                        <h3>Requisitos:</h3>
+                        <ul>
+                            <li>Um link que fale sobre você, hobbies etc.</li>
+                            <li>Um link sobre sua formação educacional, idiomas;</li>
+                            <li>Um link com seu portifólio. Pode colocar links para outros sites que você tenha feito, ou com trabalhos que você tenha desenvolvido no curso em outras disciplinas;</li>
+                            <li>Um Link para contato - fazer a parte visual do formulário (utilizar inputs);</li>
+                            <li>Utilizar Bootstrap;</li>
+                            <li>Explicar seu código através de comentários;</li>
+                            <li>Fica a seu critério criar um index adicional, se desejar, ou páginas adicionais;</li>
+                            <li>Não poderá utilizar Wix, WordPress e frameworks desse tipo. Deve ser desenvolvido com linguagem pura;</li>
+                            <li>Ao criar o seu usuário no servidor de hospedagem gratuito, utilize o seu nome como parte do domínio.</li>
+                        </ul>
+                
+                
+                        <br>
+                        <h3>CUIDADO</h3>
+                        <p>Em programação, não existem dois códigos exatamente iguais. Cada programador organiza seu código de uma forma diferente, declara variáveis com nomes diferentes, faz comentários diferentes, gera mensagens aos usuários distintas etc. Por este motivo, e como a atividade é INDIVIDUAL, não serão aceitas páginas idênticas entre alunos (ou iguais à Internet). Caso o corretor observe resposta iguais, elas serão consideradas como PLÁGIO e será atribuída a NOTA ZERO na questão.</p>
+                
+                
+                        <br>
+                        <h2>4. CRITÉRIOS DE CORREÇÃO DA ATIVIDADE</h2>
+                        <p>Para que você tenha a nota máxima na atividade, precisará cumprir todos os requisitos básicos expliciados nas ORIENTAÇÕES GERAIS.</p>
+                        <p>Deverá ser entregue no link Trabalhos o endereço do seu site.</p>
+                        <p>Dicas:</p>
+                        <ul>
+                            <li>Capriche na diagramação.</li>
+                            <li>Colocar conteúdo, principalmente nos itens sobre você, formação acadêmica e até experiência profissional se você tiver.</li>
+                            <li>Utilize o doctype html5.</li>
+                            <li>Utilize Bootstrap, nos botões, pode utilizar outros elementos a sua escolha.</li>
+                        </ul>
+                
+                        
+                        <br>
+                        <h2>5. ENTREGA DA ATIVIDADE</h2>
+                        <p>Postar os códigos no modelo de documento fornecido. Identificar o nome do arquivo e copiar e colar utilizando o botão direito do mouse. Não esquecer de colocar o endereço de onde publicou o seu portifólio.</p>  
+                </div>
+            </div>
+</body>
+</html>
